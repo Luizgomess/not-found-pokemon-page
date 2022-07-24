@@ -1,0 +1,69 @@
+$component-name: "content";
+
+.#{$component-name} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    &__hero {
+        display: flex;
+        align-items: center;
+        .#{$component-name}__hero-text {
+            font-size: 20rem;
+            font-weight: 900;
+            color: $grey-100;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .#{$component-name}__hero-img {
+            width: 270px;
+            height: 290px;
+            margin: 0 20px;
+            animation: shake 500ms ease-in-out;
+        }
+
+        @media(max-width: 720px) {
+            height: 26vh;
+
+            .#{$component-name}__hero-text {
+                font-size: 7rem;
+            }
+
+            .#{$component-name}__hero-img {
+                width: 123px;
+                height: 134px;
+                margin: 0 5px;
+            }
+        }
+    }
+    &__description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .#{$component-name}__title {
+            color: $grey-400;
+            font-family: 'Lato', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .#{$component-name}__legend {
+            font-size: 2rem;
+            font-weight: 300;
+            font-family: 'Lato', sans-serif;
+            color: $grey-200;
+        }
+
+        @media(max-width: 720px) {
+            .#{$component-name}__title {
+                font-size: 2.5rem;
+            }
+
+            .#{$component-name}__legend {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

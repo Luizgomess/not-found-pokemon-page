@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//base
+@import 'base/colors';
+@import 'base/animations';
+
+body {
+    background-color: $white-200;
+}
+
+//components
+@import 'components/header';
+@import 'components/menu-icon';
+@import 'components/main';
+@import 'components/button';

@@ -1,0 +1,12 @@
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23px;
+    &__line {
+        width: 33px;
+        height: 4px;
+        background-color: $grey-300;
+        border-radius: 5px;
+    }
+}
